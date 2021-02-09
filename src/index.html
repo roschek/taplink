@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+  <title>TapLink Zona-Komforta</title>
+</head>
+<body>
+<div class="wrapper">
+  <header class="header">
+    <h1 class="header__title">ЗОНА КОМФОРТА</h1>
+    <p class="header__subtitle">Дизайн и изготовление корпусной мебели на заказ</p>
+    <img src="<%=require('./images/EmblemBlack.svg').default%>" alt="logo">
+    <a class="header__link" href="tel:+7(800)511 70 71">+7(800)511 70 71</a>
+    <a class="header__link" href="tel:+7(812)200 50 60">+7(812)200 50 60</a>
+    <a class="header__link" href="mailto:info@zk.spb.ru">info@zk.spb.ru</a>
+
+  </header>
+  <main class="button__section">
+    <ul class="button__list">
+      <li><a href="https://vk.com/zk_mebel_rf" class="button__link">Мы в ВК</a></li>
+      <li><a href="https://www.facebook.com/groups/zkmebelrf" class="button__link button__link-black">Мы в Facebook</a>
+      </li>
+      <li><a href="https://zk.spb.ru/" class="button__link">Наш сайт</a></li>
+      <li><a href="https://wa.me/79643477888" class="button__link button__link-black">Написать в WatsApp</a></li>
+    </ul>
+    <h2 class="kitchens__title">Наши работы</h2>
+    <section class="kitchens">
+      <img class="kitchen__image" src="<%=require('./images/kitchens/kitchen1.jpg').default%>" alt="kitchen photo">
+      <img class="kitchen__image" src="<%=require('./images/kitchens/kitchen3.jpg').default%>" alt="kitchen photo">
+      <img class="kitchen__image" src="<%=require('./images/kitchens/kitchen4.jpg').default%>" alt="kitchen photo">
+      <img class="kitchen__image" src="<%=require('./images/kitchens/kitchen5.jpg').default%>" alt="kitchen photo">
+      <img class="kitchen__image" src="<%=require('./images/kitchens/work1.jpg').default%>" alt="kitchen photo">
+      <img class="kitchen__image" src="<%=require('./images/kitchens/work2.jpg').default%>" alt="kitchen photo">
+      <img class="kitchen__image" src="<%=require('./images/kitchens/work3.jpg').default%>" alt="kitchen photo">
+      <img class="kitchen__image" src="<%=require('./images/kitchens/work4.jpg').default%>" alt="kitchen photo">
+      <img class="kitchen__image" src="<%=require('./images/kitchens/work6.jpg').default%>" alt="kitchen photo">
+    </section>
+  </main>
+  <footer></footer>
+</div>
+<script src="<%= htmlWebpackPlugin.files.js %>">
+</script>
+</body>
+</html>
